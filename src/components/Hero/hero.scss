@@ -1,0 +1,83 @@
+@import "../../global.scss";
+
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;    
+    font-family: 'Titillium Web';
+    max-height: 100vh;
+    background-color: rgb(72, 21, 89);
+    @include mobile{
+        margin-bottom: 100px;
+       }
+    .bannerImg{
+        height: calc(100vh - 70px);
+        width: 100%;
+        object-fit: cover;
+        opacity: 0.4;
+        color: white;
+    }
+    .heroLogo{
+        position: absolute;
+        top: -60px;
+        height: 500px;
+        @include mobile{
+            height: 300px;
+            top: 70px;
+           }
+
+    }
+    .reserveClass{
+        position: absolute;
+        margin-top: 300px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        @include mobile{
+            margin-top: 100px;
+           }
+        h4{
+            color: white;
+            font-weight: 600;
+            font-size: 27px;
+            letter-spacing: 2px;
+            margin-top: 40px;
+            @include mobile{
+                display: none;
+               }
+        }
+        p{
+            color: white;
+            margin-top: 40px;
+            font-weight: 600;
+            font-size: 25px;
+            letter-spacing: 2px;
+            @include mobile{
+                text-align: center;
+                padding: 10px;
+               }
+        }
+        .heroButton{
+            width: 300px;
+            height: 40px;
+            margin-top: 20px;
+            background-color: black;
+            color: white;
+            border: 1px solid rgb(143, 139, 139);
+            border-radius: 50px;
+            font-size: 16px;
+            letter-spacing: 2px;
+            cursor: pointer;
+            &:hover{
+                font-weight: 500;
+                opacity: 0.7;
+            }
+        }
+    }
+    
+  
+}

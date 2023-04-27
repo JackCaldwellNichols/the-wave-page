@@ -1,0 +1,200 @@
+@import "../../global.scss";
+
+.tarifas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Titillium Web';
+    margin: 30px 0px 30px 0px;
+    height: max-content;
+    background-image: url('https://res.cloudinary.com/dzcz4e9nd/image/upload/v1682591066/PHOTO-2023-04-25-09-33-12_ib773w.jpg');
+    background-size: 100%;
+    background-position: center;
+    @include mobile{
+        background-color: black;
+        background-image: none;
+       }
+    .tarifasTitleWrapper{
+        margin: 30px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        .tarifasTitle{
+            font-weight: 600;
+            font-size: 20px;
+            text-align: center;
+            font-size: 30px;
+            position: relative;
+            color: white;
+            letter-spacing: 3px;
+            margin-bottom: 30px;
+            @include mobile{
+                margin: 0;
+           }
+            &::before{
+                content: "";
+                display: block;
+                width: 80px;
+                height: 2px;
+                background:  rgb(112, 28, 140);
+                left: -130px;
+                top: 50%;
+                position: absolute;
+                @include mobile{
+                    left: -50px;
+                    width: 40px;
+                   }
+                
+            }
+            &::after{
+                content: "";
+                display: block;
+                width: 80px;
+                height: 2px;
+                background:  rgb(112, 28, 140);
+                right: -130px;
+                top: 50%;
+                position: absolute;
+                @include mobile{
+                    right: -50px;
+                    width: 40px;
+                   }
+            }
+        }
+        p{
+            color: white;
+            font-size: 22px;
+            text-align: justify;
+            @include mobile{
+                display: none;
+               }
+        }
+    }
+    .tarifasWrapper{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        align-items: center;
+        justify-content: space-around;
+        margin: 30px 0px 30px 0px;
+        @include mobile{
+            flex-direction: column;
+        
+           }
+        .cardTarifa{
+            background-color: black;
+            opacity: 0.5;
+            height: 200px;
+            color: white;
+            outline: 1px solid purple;
+            height: 150px;
+            width: 380px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            margin-right: 0px;
+            
+            &:hover{
+                opacity: 0.7;
+            }
+            @include mobile{
+               width: 200px;
+               height: max-content;
+            
+               }
+
+        
+            .tarifaTitle{
+       
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                 &::before{
+                content: "";
+                display: block;
+                width: 80px;
+                height: 2px;
+                background:  rgb(112, 28, 140);
+                left: -130px;
+                top: 50%;
+                position: absolute;
+                @include mobile{
+                    left: -50px;
+                    width: 40px;
+                   }
+                
+            }
+            &::after{
+                content: "";
+                display: block;
+                width: 80px;
+                height: 2px;
+                background:  rgb(112, 28, 140);
+                right: -130px;
+                top: 50%;
+                position: absolute;
+                @include mobile{
+                    right: -50px;
+                    width: 40px;
+                   }
+            }
+                @include mobile{
+                    height: 100px
+                   }
+                   .titleTextTarifa{
+                    font-weight: bold;
+                    letter-spacing: 2px;
+                    text-align: center;
+                    line-height: 30px;
+                   }
+                
+            }
+        }
+    }
+    .descuentosTitleWrapper{
+        .descuentoTitle{
+            color: white;
+        }
+    }
+    .discountWrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0px 30px 0px;
+        @include mobile{
+            flex-direction: column;
+            
+       }
+        .cardDiscount{
+            display: flex;
+            flex-direction: column;
+            color: white;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            @include mobile{
+                border-top: 1px solid goldenrod;
+                
+           }
+            .titleTextDiscount{
+                text-align: center;
+            }
+            .titleTextDiscount{
+                padding: 5px 0px;
+                border-bottom: 2px solid goldenrod;
+                @include mobile{
+                    border-bottom: none;
+                    
+               }
+            }
+        }
+    }
+}

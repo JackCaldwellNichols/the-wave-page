@@ -1,0 +1,31 @@
+@import "../../global.scss";
+
+.navbar {
+  font-family: 'Titillium Web';
+  top: 0;
+  background-color: black;
+  z-index: 2;
+  li{
+    text-decoration: none;
+    margin-right: 14px;
+    font-size: 16px;
+   
+    a{
+      color: white;
+      font-family: 'Titillium Web';
+      letter-spacing: 3px;
+      text-decoration: none;
+      font-size: 17px;
+      &:hover{
+        color: white;
+        font-weight: bold;
+      }
+  }
+  }
+
+
+}
+
+
+
+

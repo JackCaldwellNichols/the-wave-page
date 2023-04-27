@@ -1,0 +1,146 @@
+@import "../../global.scss";
+
+.programmes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Titillium Web';
+    margin: 80px 0px;
+    height: max-content;
+    @include mobile{
+        margin: 50px 0px;
+       }
+    .programmesTitleWrapper{
+        .programmesTitle{
+            font-weight: 600;
+            font-size: 20px;
+            text-align: center;
+            font-size: 30px;
+            position: relative;
+            color: white;
+            letter-spacing: 3px;
+            &::before{
+                content: "";
+                display: block;
+                width: 80px;
+                height: 2px;
+                background:  rgb(112, 28, 140);
+                left: -130px;
+                top: 50%;
+                position: absolute;
+                @include mobile{
+                    left: -50px;
+                    width: 40px;
+                   }
+
+            }
+            &::after{
+                content: "";
+                display: block;
+                width: 80px;
+                height: 2px;
+                background:  rgb(112, 28, 140);
+                right: -130px;
+                top: 50%;
+                position: absolute;
+                @include mobile{
+                    right: -50px;
+                    width: 40px;
+                   }
+            }
+        }
+    }
+    .programmesWrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 30px 0px 0px 0px;
+        @include tablet{
+            flex-direction: column;
+        
+           }
+        .card{
+            background-color: black;
+            color: white;
+            height: 550px;
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+            outline: 1px solid purple;
+            border-radius: 10px;
+            margin-right: 40px;
+            position: relative;
+            gap: 10px;
+            @include tablet{
+                height: 250px;
+                width: 500px;
+                margin-bottom: 20px;
+                margin-right: 0;
+            
+               }
+               @include mobile{
+                height: 250px;
+                width: 350px;
+                margin-bottom: 20px;
+                margin-right: 0;
+            
+               }
+            .cardTitle{
+                margin-bottom: -20px;
+                z-index: 2;
+                @include tablet{
+                    height: 50px;
+                    z-index: 0;
+                   }
+                .titleText{
+                    font-weight: bold;
+                    letter-spacing: 2px;
+                }
+            }
+            .cardImgContainer{
+                display: flex;
+                justify-self: center;
+                align-content: flex-start;
+                .cardImg{
+                    height: 300px;
+                    width: 300px;
+                    object-fit: contain;
+                    @include tablet{
+                        display: none;
+                       }
+                }
+            }
+            .cardText {
+                display: flex;
+                text-align: justify;
+                align-items: flex-start;
+                @include mobile{
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                    
+                   }
+            }
+            .cardBtn{
+                position: absolute;
+                bottom: 40px;
+                width: 200px;
+                padding: 10px;
+                border-radius: 10px;
+                background-color: white;
+                font-family: 'Titillium Web';
+                font-weight: 400;
+                cursor: pointer;
+                @include mobile{
+                    bottom: 17px;
+                    width: 200px;
+                    padding: 5px;
+                
+                   }
+
+            }
+        }
+    }
+}

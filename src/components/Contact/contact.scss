@@ -1,0 +1,185 @@
+@import "../../global.scss";
+
+
+.contact{
+    background-image: url('https://res.cloudinary.com/dzcz4e9nd/image/upload/v1682608871/fotor_2023-4-27_17_20_54_wccez4.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Titillium Web';
+    margin: 0px 0px 30px 0px;
+    height: max-content;
+    background-size: 100%;
+    background-position: center;
+    @include tablet{
+        background-image: none;
+        background-color: black;
+       }
+    .contactTitleWrapper{
+        margin: 30px 0px 30px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        .contactTitle{
+            font-weight: 600;
+            font-size: 20px;
+            text-align: center;
+            font-size: 30px;
+            position: relative;
+            color: white;
+            letter-spacing: 3px;
+            margin-bottom: 30px;
+            @include mobile{
+                margin: 0;
+           }
+            &::before{
+                content: "";
+                display: block;
+                width: 80px;
+                height: 2px;
+                background:  rgb(112, 28, 140);
+                left: -130px;
+                top: 50%;
+                position: absolute;
+                @include mobile{
+                    left: -50px;
+                    width: 40px;
+                   }
+                
+            }
+            &::after{
+                content: "";
+                display: block;
+                width: 80px;
+                height: 2px;
+                background:  rgb(112, 28, 140);
+                right: -130px;
+                top: 50%;
+                position: absolute;
+                @include mobile{
+                    right: -50px;
+                    width: 40px;
+                   }
+            }
+        }
+    }
+    .contactWrapper{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding: 20px;
+        margin-bottom: 20px;
+        height: 100%;
+        width: 100%;
+        @include tablet{
+            flex-direction: column;
+            justify-content: center;
+           }
+        .contactLeft{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include tablet{
+                width: 100%;
+               }
+            form{
+                width: 70%  ;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                input{
+                    background-color: white;
+                    color: black;
+                    height: 50px;
+                    padding: 5px;
+                    padding-left: 10px;
+                    border-radius: 10px;
+                    border: none;
+                    &:focus{
+                        outline: none;
+                    }
+    
+                }
+    
+                textarea{
+                    background-color: white;
+                    color: black;
+                    padding: 5px;
+                    border-radius: 10px;
+                    padding-left: 10px;
+                    &:focus{
+                        outline: none;
+                    }
+                    
+                }
+
+                .formBtn{
+                    width: 30%;
+                    align-self: center;
+                    background-color: white;
+                    color: black;
+                    border-radius: 20px;
+                    padding: 5px;
+                    transition: 0.3s ease-in;
+                    &:hover{
+                        background-color: black;
+                        color: white;
+                    }
+                }
+            }
+           
+
+          
+        }
+        .contactRight{
+            display: flex;
+            flex: 1;
+           justify-content: center;
+           align-items: center;
+           @include tablet{
+            width: 100%;
+            display: flex;
+            text-align: center;
+            margin-top: 20px;
+           }
+            .topContact{
+                display: flex;
+                gap: 50px;
+                align-items: flex-start;
+                flex-direction: column;
+                width: 50%;
+                @include tablet{
+                    gap: 20px;
+                    align-items: center;
+                   }
+                
+                h4{
+                    font-weight: bold;
+                    font-size: 30px;
+                    color: white;
+                    @include tablet{
+                    
+                        font-size: 25px;
+                       }
+                }
+                h5{
+                    font-weight: 400;
+                    font-size: 25px;
+                    color: white;
+                    @include tablet{
+                    
+                        font-size: 18px;
+                       }
+                }
+                p{
+                    color: white;
+                    padding: 10px;
+                }
+            }
+    }
+}
+}

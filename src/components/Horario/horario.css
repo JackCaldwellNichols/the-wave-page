@@ -1,0 +1,64 @@
+.horarioWrapper {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+
+}
+.horario {
+display: flex;
+ padding: 10px;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+}
+.horarioTitle{
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    color: white;
+    letter-spacing: 3px;
+   
+}
+  table {
+    width: 500px;
+    height: max-content;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: rgb(119, 101, 101);
+  }
+  th,
+  td {
+    padding: 10px;
+    background:  rgb(112, 28, 140);
+    color: #fff;
+    border: 2px solid black;
+    text-align: center;
+  
+  }
+  th {
+    text-align: center;
+    min-width: 200px;
+  }
+  thead th {
+    background-color: #55608f;
+    
+  }
+  tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  tbody td {
+    position: relative;
+  }
+  tbody td:hover:before {
+    content: "";
+    top: -9999px;
+    bottom: -9999px;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+  }
+  
