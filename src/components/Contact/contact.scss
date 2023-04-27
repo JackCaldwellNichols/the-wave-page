@@ -125,6 +125,9 @@
                     border-radius: 20px;
                     padding: 5px;
                     transition: 0.3s ease-in;
+                    @include mobile{
+                        width: 200px;
+                       }
                     &:hover{
                         background-color: black;
                         color: white;
